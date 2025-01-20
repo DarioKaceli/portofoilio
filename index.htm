@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        #home {
+            background: #000;
+            text-align: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home h1 {
+            font-size: 4em;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        #home p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        #home .links {
+            margin-top: 20px;
+        }
+
+        #home .links a {
+            display: inline-block;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        #home .links a:hover {
+            background-color: #ccc;
+        }
+
+        #about {
+            background: #000;
+            text-align: center;
+            height: 50vh;
+        }
+
+        .cv-link {
+            display: inline-block;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        .cv-link:hover {
+            background-color: #ccc;
+        }
+
+        #projects {
+            background: #000;
+            color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+            height: auto;
+        }
+
+        .project {
+            border: 2px solid #fff;
+            border-radius: 5px;
+            padding: 10px;
+            max-width: 400px;
+            width: 100%;
+            background-color: #000;
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            text-align: center;
+            height: auto;
+        }
+
+        .project img {
+            width: 100%;
+        }
+
+        .project button {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project button:hover {
+            background-color: #ccc;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        #education {
+            background: #000;
+            text-align: center;
+            height: 30vh;
+        }
+
+        #contact {
+            background: #000;
+            text-align: center;
+            height: 30vh;
+        }
+
+        #contact button {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            margin: 10px;
+        }
+
+        #contact button:hover {
+            background-color: #ccc;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        #blog {
+            background: #000;
+            text-align: center;
+            height: 20vh;
+        }
+    </style>
+</head>
+      <hr>
+
+<body>
+    <header>
+        <h1>Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education & Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+  <hr>
+
+    <section id="home">
+        <h1>Dario Kaceli</h1>
+        <p>Full-stack Web Developer</p>
+        <div class="links">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+    </section>
+  <hr>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Dario Kaceli, a full-stack web developer with a passion for creating dynamic and interactive websites...</p>
+        <p>If you'd like to view or download my CV, you can do so here:</p>
+        <a href="path/to/your/CV.pdf" class="cv-link" download>Download My CV</a>
+    </section>
+    <hr>
+
+    <section id="projects">
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Inter</h3>
+                <button onclick="window.open('file:///C:/Users/Elsidon/OneDrive/Desktop/piza.html', '_blank')">View Project</button>
+            </div>
+        </section>
+    </section>
+    <hr>
+
+    <section id="education">
+        <h2>Education & Experience</h2>
+        <p>Bachelor's Degree in Computer Science 2023-2026</p>
+        <p>Without experience</p>
+    </section>
+      <hr>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <button onclick="window.open('https://wa.me/0688028533', '_blank')">WhatsApp</button>
+        <button onclick="window.open('mailto://dkaceli23@beder.edu.al', '_blank')">Email</button>
+    </section>
+      <hr>
+
+
+
+    <footer>
+        <p>&copy; 2025 Dario Kaceli. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
